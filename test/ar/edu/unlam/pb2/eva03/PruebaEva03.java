@@ -70,7 +70,7 @@ public class PruebaEva03 {
 		Deportista celeste = new Corredor(1000, "Celeste", 10000);
 		Club actual = new Club("Sitas");
 		actual.agregarDeportista(celeste);
-		actual.crearEvento(TipoDeEvento.CARRERA_NATACION_EN_AGUAS_ABIERTAS, "Maraton de aguas abiertas");
+		actual.crearEvento( TipoDeEvento.CARRERA_NATACION_EN_AGUAS_ABIERTAS, "Maraton de aguas abiertas");
 		
 		assertNotEquals((Integer)1, actual.inscribirEnEvento("Maraton de aguas abiertas", celeste));		
 	}
